@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --chinzo-red: #e61114;
+    --chinzo-red-dark: #c40c0f;
+    --chinzo-surface: #f6f6f8;
+    --chinzo-ink: #18181b;
+    --chinzo-muted: #646773;
+  }
+
+  body {
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    color: var(--chinzo-ink);
+    background-color: #eceef2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Plus Jakarta Sans', 'DM Sans', system-ui, sans-serif;
+  }
+}
+
+/* Hide scrollbars cleanly for mobile horizontal carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
