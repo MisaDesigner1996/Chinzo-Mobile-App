@@ -276,34 +276,20 @@ export const ChinzoHomeOption2: React.FC<ChinzoHomeOption2Props> = ({
           <IPhoneStatusBar tone="dark-text" />
         </div>
 
-        {/* Chinzo Logo + Location + Notification + Cart */}
+        {/* Location + Notification + Cart */}
         <div className="flex items-center justify-between gap-2">
-          <div className="flex items-center gap-2 min-w-0">
-            <button
-              type="button"
-              onClick={() => handleBottomNavClick('home')}
-              className="px-2 py-1 rounded-xl bg-[#E61114] shadow-sm shrink-0 flex items-center"
-              aria-label="Chinzo Home"
-            >
-              <img
-                src="/assets/chinzo/logo.png"
-                alt="Chinzo"
-                referrerPolicy="no-referrer"
-                className="h-6 w-auto object-contain"
-              />
-            </button>
-
+          <div className="flex items-center min-w-0">
             <button
               type="button"
               onClick={() => setActiveSheet('location')}
-              className="min-w-0 flex items-center gap-1 text-left px-2 py-1 rounded-xl hover:bg-black/5 transition-colors"
+              className="min-w-0 flex items-center gap-1.5 text-left px-2 py-1 rounded-xl hover:bg-black/5 transition-colors"
             >
-              <MapPin className="w-3.5 h-3.5 text-[#E61114] shrink-0" />
+              <MapPin className="w-4 h-4 text-[#E61114] shrink-0" />
               <div className="min-w-0 leading-tight">
-                <span className="block text-[9.5px] font-medium text-[#71717A]">Manama Delivery</span>
-                <span className="flex items-center gap-0.5 text-[12px] font-bold text-[#1A1D24] truncate max-w-[130px]">
+                <span className="block text-[10px] font-medium text-[#71717A]">Manama Delivery</span>
+                <span className="flex items-center gap-0.5 text-[12.5px] font-bold text-[#1A1D24] truncate max-w-[200px]">
                   <span className="truncate">{currentLocation.label}</span>
-                  <ChevronDown className="w-3 h-3 shrink-0 text-[#71717A]" />
+                  <ChevronDown className="w-3.5 h-3.5 shrink-0 text-[#71717A]" />
                 </span>
               </div>
             </button>

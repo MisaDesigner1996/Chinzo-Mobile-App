@@ -148,32 +148,18 @@ export const ChinzoHomeOption1: React.FC<ChinzoHomeOption1Props> = ({
         <IPhoneStatusBar tone="light-text" />
 
         <div className="px-4 py-2 flex items-center justify-between gap-2">
-          <div className="flex items-center gap-2 min-w-0">
-            <button
-              type="button"
-              onClick={() => handleBottomNavClick('home')}
-              aria-label="Chinzo Home"
-              className="shrink-0 focus-visible:outline-2 focus-visible:outline-white rounded-lg"
-            >
-              <img
-                src="/assets/chinzo/logo.png"
-                alt="Chinzo Logo"
-                referrerPolicy="no-referrer"
-                className="h-8 w-auto object-contain"
-              />
-            </button>
-
+          <div className="flex items-center min-w-0">
             <button
               type="button"
               onClick={() => setActiveSheet('location')}
-              className="min-w-0 flex items-center gap-1 px-2 py-1.5 rounded-xl bg-black/15 hover:bg-black/25 transition-colors text-left"
+              className="min-w-0 flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-black/15 hover:bg-black/25 transition-colors text-left"
             >
               <MapPin className="w-3.5 h-3.5 text-white shrink-0" />
               <div className="min-w-0 leading-tight">
                 <span className="block text-[9.5px] text-white/80 font-medium">Deliver to</span>
-                <span className="flex items-center gap-0.5 text-[11.5px] font-bold text-white truncate max-w-[125px]">
+                <span className="flex items-center gap-0.5 text-[12px] font-bold text-white truncate max-w-[200px]">
                   <span className="truncate">{currentLocation.label}</span>
-                  <ChevronDown className="w-3 h-3 shrink-0 opacity-90" />
+                  <ChevronDown className="w-3.5 h-3.5 shrink-0 opacity-90" />
                 </span>
               </div>
             </button>

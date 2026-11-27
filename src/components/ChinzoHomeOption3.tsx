@@ -242,34 +242,20 @@ export const ChinzoHomeOption3: React.FC<ChinzoHomeOption3Props> = ({
           <IPhoneStatusBar tone="dark-text" />
         </div>
 
-        {/* Left: Brand Avatar Tile + Greeting/Delivery Info | Right: Bell + Cart */}
+        {/* Left: Delivery Info | Right: Bell + Cart */}
         <div className="flex items-center justify-between gap-2">
-          <div className="flex items-center gap-2.5 min-w-0">
-            <button
-              type="button"
-              onClick={() => handleBottomNavClick('home')}
-              aria-label="Chinzo Home"
-              className="w-11 h-11 rounded-xl bg-[#E61114] p-1 shadow-sm flex items-center justify-center shrink-0 overflow-hidden"
-            >
-              <img
-                src="/assets/chinzo/logo.png"
-                alt="Chinzo Logo"
-                referrerPolicy="no-referrer"
-                className="w-full h-full object-contain"
-              />
-            </button>
-
+          <div className="flex items-center min-w-0">
             <button
               type="button"
               onClick={() => setActiveSheet('location')}
-              className="min-w-0 text-left"
+              className="min-w-0 text-left px-1 py-0.5 rounded-xl hover:bg-black/5 transition-colors"
             >
               <span className="block text-[11px] font-medium text-[#64748B] leading-tight">
-                Chinzo Bahrain · Deliver to
+                Deliver to
               </span>
-              <span className="flex items-center gap-1 text-[14px] font-extrabold text-[#18181B] font-display leading-tight mt-0.5">
+              <span className="flex items-center gap-1 text-[14.5px] font-extrabold text-[#18181B] font-display leading-tight mt-0.5">
                 <MapPin className="w-3.5 h-3.5 text-[#E61114] shrink-0" />
-                <span className="truncate max-w-[140px]">{currentLocation.label}</span>
+                <span className="truncate max-w-[210px]">{currentLocation.label}</span>
                 <ChevronDown className="w-3.5 h-3.5 text-[#64748B] shrink-0" />
               </span>
             </button>
